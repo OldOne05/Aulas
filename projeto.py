@@ -10,6 +10,7 @@ while True:
     for i in range(rodadas):
         player = input("Qual sua escolha? [Pedra, Papel, Tesoura]\n").replace(" ","").capitalize()
         pc = randint(0,2)
+        print("Eu escolho:")
         print(cpu[pc])
         if player == "Pedra" and cpu[pc] == "Tesoura":
             win += 1
